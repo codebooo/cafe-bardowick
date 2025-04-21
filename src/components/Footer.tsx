@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Café Bardowick</h3>
             <p className="mb-2">Große Str. 8</p>
-            <p className="mb-2">21335 Bardowick</p>
+            <p className="mb-2">21357 Bardowick</p>
             <p className="mb-2">Tel: 01609 6469375</p>
             <p>Email: info@cafe-blossom.de</p>
           </div>
