@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Café Blossom</h3>
+            <h3 className="text-xl font-bold mb-4">Café Bardowick</h3>
             <p className="mb-2">Bardowicker Str. 12</p>
             <p className="mb-2">21335 Bardowick</p>
             <p className="mb-2">Tel: 04131 12345</p>
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="border-t border-white/20 mt-8 pt-6 text-sm text-center">
-          <p>&copy; 2025 Café Blossom. Alle Rechte vorbehalten.</p>
+          <p>&copy; 2025 Café Bardowick. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>

@@ -78,7 +78,7 @@ const OpeningHours = () => {
                 </div>
                 
                 <address className="not-italic mb-6">
-                  <p className="text-lg mb-2">Café Blossom</p>
+                  <p className="text-lg mb-2">Café Bardowick</p>
                   <p className="mb-1">Bardowicker Str. 12</p>
                   <p className="mb-1">21335 Bardowick</p>
                   <p className="mb-1">Tel: 04131 12345</p>

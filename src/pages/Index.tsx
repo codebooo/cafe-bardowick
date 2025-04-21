@@ -74,7 +74,7 @@ const Index = () => {
           }}
         >
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Willkommen im Café Blossom</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Willkommen im Café Bardowick</h1>
             <p className="text-xl text-white mb-8">Genießen Sie unseren handgebrühten Kaffee und hausgemachte Leckereien</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
@@ -98,9 +98,9 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-cafe-brown mb-4">Über Café Blossom</h2>
+                <h2 className="text-3xl font-bold text-cafe-brown mb-4">Über Café Bardowick</h2>
                 <p className="text-lg text-gray-700 mb-6">
-                  Herzlich willkommen im Café Blossom, Ihrem gemütlichen Treffpunkt in Bardowick. 
+                  Herzlich willkommen im Café Bardowick, Ihrem gemütlichen Treffpunkt in Bardowick. 
                   Wir sind ein familiengeführtes Café mit einer Leidenschaft für qualitativ hochwertigen 
                   Kaffee und hausgemachte Backwaren.
                 </p>

@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="text-white text-2xl font-bold">
-              Café Blossom
+              Café Bardowick
             </Link>
           </div>
           <div className="hidden md:block">
