@@ -31,31 +31,31 @@ const OpeningHours = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between pb-2 border-b border-gray-200">
                     <span className="font-medium">Montag</span>
-                    <span>8:00 - 19:00</span>
+                    <span>8:30 - 18:00</span>
                   </div>
                   <div className="flex justify-between pb-2 border-b border-gray-200">
                     <span className="font-medium">Dienstag</span>
-                    <span>8:00 - 19:00</span>
+                    <span>8:30 - 18:00</span>
                   </div>
                   <div className="flex justify-between pb-2 border-b border-gray-200">
                     <span className="font-medium">Mittwoch</span>
-                    <span>8:00 - 19:00</span>
+                    <span>8:30 - 18:00</span>
                   </div>
                   <div className="flex justify-between pb-2 border-b border-gray-200">
                     <span className="font-medium">Donnerstag</span>
-                    <span>8:00 - 19:00</span>
+                    <span>8:30 - 18:00</span>
                   </div>
                   <div className="flex justify-between pb-2 border-b border-gray-200">
                     <span className="font-medium">Freitag</span>
-                    <span>8:00 - 19:00</span>
+                    <span>8:30 - 18:00</span>
                   </div>
                   <div className="flex justify-between pb-2 border-b border-gray-200">
                     <span className="font-medium">Samstag</span>
-                    <span>9:00 - 18:00</span>
+                    <span>8:30 - 18:00</span>
                   </div>
                   <div className="flex justify-between pb-2 border-b border-gray-200">
                     <span className="font-medium">Sonntag</span>
-                    <span>9:00 - 18:00</span>
+                    <span>8:30 - 18:00</span>
                   </div>
                 </div>
                 
@@ -82,7 +82,7 @@ const OpeningHours = () => {
                   <p className="mb-1">Bardowicker Str. 12</p>
                   <p className="mb-1">21335 Bardowick</p>
                   <p className="mb-1">Tel: 04131 12345</p>
-                  <p className="mb-1">Email: info@cafe-blossom.de</p>
+                  <p className="mb-1">Email: info@cafe-bardowick.de</p>
                 </address>
                 
                 {/* Google Maps iframe */}
