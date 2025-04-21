@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
           </div>
           <div className="hidden md:block">
             <div className="text-white text-sm">
-              <span>Mo-Fr: 8:00 - 19:00 | Sa-So: 9:00 - 18:00</span>
+              <span>Mo-Fr: 8:30 - 18:00 | Sa-So: 8:30 - 18:00</span>
             </div>
           </div>
         </div>
