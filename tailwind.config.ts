@@ -61,6 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				cafe: {
+					peach: '#FDE1D3',
+					pink: '#FFDEE2',
+					green: '#F2FCE2',
+					yellow: '#FEF7CD',
+					brown: '#4A3C32',
+					lightBrown: '#8B7D74',
 				}
 			},
 			borderRadius: {
