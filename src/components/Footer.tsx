@@ -15,9 +15,9 @@ const Footer: React.FC = () => {
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Öffnungszeiten</h3>
-            <p className="mb-2">Montag - Freitag: 8:00 - 19:00</p>
-            <p className="mb-2">Samstag - Sonntag: 9:00 - 18:00</p>
-            <p className="mb-2">Feiertage: 10:00 - 17:00</p>
+            <p className="mb-2">Montag - Freitag: 8:30 - 18:00</p>
+            <p className="mb-2">Samstag - Sonntag: 8:30 - 18:00</p>
+            <p className="mb-2">Feiertage: Meist geschlossen</p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Links</h3>
