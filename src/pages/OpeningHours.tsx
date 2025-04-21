@@ -63,7 +63,7 @@ const OpeningHours = () => {
                   <div className="flex items-start">
                     <Info className="w-5 h-5 text-cafe-brown mt-1 mr-2 flex-shrink-0" />
                     <p className="text-sm">
-                      An Feiertagen haben wir von 10:00 - 17:00 Uhr geöffnet. 
+                      An Feiertagen können Öffnungszeiten abweichen. 
                       Bitte beachten Sie mögliche Sonderöffnungszeiten an besonderen Tagen.
                     </p>
                   </div>
