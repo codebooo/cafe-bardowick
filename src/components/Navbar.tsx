@@ -20,9 +20,6 @@ const Navbar: React.FC = () => {
                 Öffnungszeiten
               </Link>
               <Link to="/" className="text-white hover:text-cafe-yellow px-3 py-2 rounded-md text-sm font-medium">
-                Unser Café
-              </Link>
-              <Link to="/" className="text-white hover:text-cafe-yellow px-3 py-2 rounded-md text-sm font-medium">
                 Kontakt
               </Link>
             </div>
