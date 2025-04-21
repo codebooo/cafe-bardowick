@@ -117,11 +117,11 @@ const Index = () => {
                 <div className="flex flex-wrap gap-4">
                   <div className="flex items-center">
                     <MapPin className="w-5 h-5 text-cafe-brown mr-2" />
-                    <span>Bardowicker Str. 12, 21335 Bardowick</span>
+                    <span>BGroße Str. 8, 21357 Bardowick</span>
                   </div>
                   <div className="flex items-center">
                     <Calendar className="w-5 h-5 text-cafe-brown mr-2" />
-                    <span>Mo-Fr: 8:30 - 18:00, Sa-So: 8:30 - 18:00</span>
+                    <span>Mo-Fr: 8:30 - 18:00 & Sa-So: 8:30 - 18:00</span>
                   </div>
                 </div>
               </div>
