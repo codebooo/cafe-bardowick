@@ -100,7 +100,7 @@ const Index = () => {
         <section className={`py-16 bg-cafe-peach ${slideUpAnim}`}>
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div>
+              <div className={slideUpAnim}>
                 <h2 className="text-3xl font-bold text-cafe-brown mb-4">Über Café Bardowick</h2>
                 <p className="text-lg text-gray-700 mb-6">
                   In unserem Café genießen Sie köstlichen, frisch gebrühten Kaffee und eine verlockende Auswahl an hausgemachten Kuchen.
@@ -139,7 +139,7 @@ const Index = () => {
         {/* Coffee offer section */}
         <section id="angebot" className={`py-16 ${slideUpAnim}`}>
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
+            <div className={`text-center mb-12 ${slideUpAnim}`}>
               <h2 className="text-3xl font-bold text-cafe-brown mb-4">Unser Kaffee-Angebot</h2>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
                 Entdecken Sie unsere Auswahl an handgebrühtem Kaffee, zubereitet mit ausgewählten Bohnen 
@@ -163,7 +163,7 @@ const Index = () => {
         {/* Reviews section */}
         <section className={`py-16 bg-cafe-green/30 ${slideUpAnim}`}>
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
+            <div className={`text-center mb-12 ${slideUpAnim}`}>
               <h2 className="text-3xl font-bold text-cafe-brown mb-4">Das sagen unsere Besucher</h2>
               <div className="flex items-center justify-center mb-4">
                 <Star className="w-6 h-6 text-yellow-400 fill-yellow-400" />
@@ -171,7 +171,7 @@ const Index = () => {
                 <Star className="w-6 h-6 text-yellow-400 fill-yellow-400" />
                 <Star className="w-6 h-6 text-yellow-400 fill-yellow-400" />
                 <Star className="w-6 h-6 text-yellow-400 fill-yellow-400" />
-                <span className="ml-2 text-lg font-medium">4.9 von 5 Sternen</span>
+                <span className="ml-2 text-lg font-medium">4,6 von 5 Sternen</span>
               </div>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
                 Wir freuen uns über das positive Feedback unserer Gäste. Hier sind einige Meinungen 
@@ -210,7 +210,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="bg-white rounded-lg shadow-xl overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="p-8 md:p-12">
+                <div className={`p-8 md:p-12 ${slideUpAnim}`}>
                   <h2 className="text-3xl font-bold text-cafe-brown mb-4">Unser Angebot der Woche</h2>
                   <p className="text-lg text-gray-700 mb-6">
                     Genießen Sie unsere spezielle Kombination zum Vorteilspreis:
@@ -225,7 +225,7 @@ const Index = () => {
                     Nur 7,90 €
                   </div>
                 </div>
-                <div className={`bg-cover bg-center ${zoomImg}`}
+                <div className={`bg-cover bg-center ${zoomImg} ${slideUpAnim}`}
                   style={{ backgroundImage: `url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)` }}>
                 </div>
               </div>
@@ -235,7 +235,7 @@ const Index = () => {
         
         {/* CTA section */}
         <section className={`py-16 bg-cafe-pink ${slideUpAnim}`}>
-          <div className="container mx-auto px-4 text-center">
+          <div className={`container mx-auto px-4 text-center ${slideUpAnim}`}>
             <h2 className="text-3xl font-bold text-cafe-brown mb-6">Besuchen Sie uns</h2>
             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
               Wir freuen uns darauf, Sie in unserem gemütlichen Café begrüßen zu dürfen und Ihnen 
@@ -253,7 +253,7 @@ const Index = () => {
         {/* Instagram Feed Embed */}
         <section className={`py-16 ${slideUpAnim}`}>
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-cafe-brown mb-8 text-center">Unser Café auf Instagram</h2>
+            <h2 className={`text-3xl font-bold text-cafe-brown mb-8 text-center ${slideUpAnim}`}>Unser Café auf Instagram</h2>
             <div className="flex justify-center">
               <iframe
                 src="https://www.instagram.com/p/C8xVvWCMapJ/embed"
