@@ -1,10 +1,10 @@
-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CoffeeCard from "../components/CoffeeCard";
 import Review from "../components/Review";
 import { Link } from "react-router-dom";
 import { Calendar, MapPin, Star } from "lucide-react";
+import React from "react";
 
 const Index = () => {
   const coffeeItems = [
@@ -60,11 +60,14 @@ const Index = () => {
       comment: "Gemütliches Café mit einer tollen Atmosphäre. Der Cappuccino ist der beste in Bardowick und die selbstgemachten Torten sind himmlisch!"
     }
   ];
-  
+
+  const slideUpAnim = "animate-fade-in";
+  const zoomImg = "transition-transform duration-300 hover:scale-105";
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-grow bg-cafe-yellow/30">
         {/* Hero section */}
         <section 
@@ -94,13 +97,15 @@ const Index = () => {
         </section>
 
         {/* About section */}
-        <section className="py-16 bg-cafe-peach">
+        <section className={`py-16 bg-cafe-peach ${slideUpAnim}`}>
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-cafe-brown mb-4">Über Café Bardowick</h2>
                 <p className="text-lg text-gray-700 mb-6">
-                  Herzlich willkommen im Café Bardowick, Ihrem gemütlichen Treffpunkt in Bardowick. 
+                  In unserem Café genießen Sie köstlichen, frisch gebrühten Kaffee und eine verlockende Auswahl an hausgemachten Kuchen.
+                </p>
+                <p className="text-lg text-gray-700 mb-6">
                   Wir sind ein familiengeführtes Café mit einer Leidenschaft für qualitativ hochwertigen 
                   Kaffee und hausgemachte Backwaren.
                 </p>
@@ -120,11 +125,11 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              <div className="rounded-lg overflow-hidden shadow-xl">
+              <div className={`rounded-lg overflow-hidden shadow-xl ${slideUpAnim}`}>
                 <img 
                   src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                   alt="Café Inneres" 
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full object-cover ${zoomImg}`}
                 />
               </div>
             </div>
@@ -132,7 +137,7 @@ const Index = () => {
         </section>
         
         {/* Coffee offer section */}
-        <section id="angebot" className="py-16">
+        <section id="angebot" className={`py-16 ${slideUpAnim}`}>
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-cafe-brown mb-4">Unser Kaffee-Angebot</h2>
@@ -141,22 +146,22 @@ const Index = () => {
                 und viel Leidenschaft für den perfekten Genuss.
               </p>
             </div>
-            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {coffeeItems.map((coffee, index) => (
-                <CoffeeCard 
-                  key={index}
-                  name={coffee.name}
-                  description={coffee.description}
-                  price={coffee.price}
-                />
+                <div className={slideUpAnim} key={index}>
+                  <CoffeeCard 
+                    name={coffee.name}
+                    description={coffee.description}
+                    price={coffee.price}
+                  />
+                </div>
               ))}
             </div>
           </div>
         </section>
         
         {/* Reviews section */}
-        <section className="py-16 bg-cafe-green/30">
+        <section className={`py-16 bg-cafe-green/30 ${slideUpAnim}`}>
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-cafe-brown mb-4">Das sagen unsere Besucher</h2>
@@ -176,16 +181,16 @@ const Index = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {reviews.map((review, index) => (
-                <Review 
-                  key={index}
-                  name={review.name}
-                  date={review.date}
-                  rating={review.rating}
-                  comment={review.comment}
-                />
+                <div className={slideUpAnim} key={index}>
+                  <Review 
+                    name={review.name}
+                    date={review.date}
+                    rating={review.rating}
+                    comment={review.comment}
+                  />
+                </div>
               ))}
             </div>
-            
             <div className="text-center mt-10">
               <a 
                 href="https://maps.app.goo.gl/7eHmGGSwGdzpJvVZ9" 
@@ -201,7 +206,7 @@ const Index = () => {
         </section>
         
         {/* Special offers */}
-        <section className="py-16">
+        <section className={`py-16 ${slideUpAnim}`}>
           <div className="container mx-auto px-4">
             <div className="bg-white rounded-lg shadow-xl overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2">
@@ -220,14 +225,16 @@ const Index = () => {
                     Nur 7,90 €
                   </div>
                 </div>
-                <div className="bg-cover bg-center" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)` }}></div>
+                <div className={`bg-cover bg-center ${zoomImg}`}
+                  style={{ backgroundImage: `url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)` }}>
+                </div>
               </div>
             </div>
           </div>
         </section>
         
         {/* CTA section */}
-        <section className="py-16 bg-cafe-pink">
+        <section className={`py-16 bg-cafe-pink ${slideUpAnim}`}>
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-cafe-brown mb-6">Besuchen Sie uns</h2>
             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
@@ -242,8 +249,36 @@ const Index = () => {
             </Link>
           </div>
         </section>
+
+        {/* Instagram Feed Embed */}
+        <section className={`py-16 ${slideUpAnim}`}>
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-cafe-brown mb-8 text-center">Unser Café auf Instagram</h2>
+            <div className="flex justify-center">
+              <iframe
+                src="https://www.instagram.com/p/C8xVvWCMapJ/embed"
+                width="400"
+                height="480"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                title="Café Bardowick Instagram"
+                className="rounded-lg border shadow-xl w-full max-w-md"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div className="text-center mt-4 text-cafe-brown">
+              <a
+                href="https://www.instagram.com/cafe.bardowick/"
+                className="underline hover:text-cafe-pink"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @cafe.bardowick auf Instagram ansehen
+              </a>
+            </div>
+          </div>
+        </section>
+
       </main>
-      
       <Footer />
     </div>
   );
